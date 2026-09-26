@@ -53,7 +53,7 @@ class Game extends Component {
     const boardHeight = parentHeight - (prevElHeight + nextElHeight)
     const gameRowsNum = Math.floor(boardHeight / this.props.boxSize)
     const gameColsNum = Math.floor(boardWidth / this.props.boxSize)
-    const gameState = new GameState(gameRowsNum, gameColsNum)
+    const gameState = GameState(gameRowsNum, gameColsNum)
     this.game = new GameOfLife(gameState, this.props.torus)
     this.setState({
       boxSize: this.props.boxSize,
