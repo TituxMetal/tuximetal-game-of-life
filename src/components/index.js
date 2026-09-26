@@ -1,0 +1,5 @@
+export { default as Cell } from './Cell'
+export { default as Game } from './Game'
+export { default as FancyButton } from './FancyButton'
+export { default as Toolbar } from './Toolbar'
+export { default as Board } from './Board'
